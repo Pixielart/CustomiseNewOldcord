@@ -37,13 +37,10 @@ body {
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*settings bg*/
     --background-base-low: var(--background-base-lower);
-    
-    /*idk*/
-    --border-strong: rgb(60, 255, 0);
+
     /*Hover friends*/
     --background-mod-subtle: #36383D;
 
-    
     /*chat bg*/
     --background-base-lower: #323337;
     /*chat header and blank sidebar icons*/
@@ -77,10 +74,36 @@ body {
     /*reaction emojis*/
     --selected-reaction-emoji-background: #393D5D;
     --emoji-reaction-border: #4752C4;
+    /*Message hover*/
+    --background-message-hover: #04040512;
+    /*fonts*/
+    --header-primary: var(--white-500);
+    /* replied to text*/
+    --header-secondary: #B9B9BE;
+    /*main text font*/
+     --text-normal: color-mix(in oklab, var(--primary-230) 100%, 
+     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+    /*nonselected channels colour*/
+    --channels-default: #8e9297;
+    /*icons colour*/
+    --interactive-normal: #B9B9BE;
+    --interactive-hover: #dcddde;
+    --interactive-active: var(--white-500);
+    /*muted channels*/
+    --interactive-muted: hsl(217, calc(1 * 8%), 34%);
+}
 
+body {
+    /*channel icons*/
+        --text-muted: #72767d;
+}
+
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
+     /*idk*/
+    --border-strong: rgb(60, 255, 0);
+    /*extra - ignore unless doing a deeper edit*/
     --modal-footer-background: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
     --checkbox-background-checked: var(--blurple);
-    --text-normal: color-mix(in oklab, var(--primary-230) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
     --__spoiler-background-color--hidden: var(--primary-700);
     --__spoiler-background-color--hidden--hover: hsl(225 calc( 1 *6.25%) 12.549% /0.8);
     --__spoiler-background-color--revealed: hsl(0 calc( 1 *0%) 100% /0.1);
@@ -90,17 +113,9 @@ body {
     --__spoiler-warning-background-color: hsl(0 calc( 1 *0%) 0% /0.6);
     --__spoiler-warning-background-color--hover: hsl(0 calc( 1 *0%) 0% /0.9);
     --__spoiler-container-box-shadow-color: hsl(0 calc( 1 *0%) 0% /0.1);
-}
 
-.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     --autocomplete-bg: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-    --header-primary: var(--white-500);
-    --header-secondary: #B9B9BE;
-    --channels-default: #8e9297;
-    --interactive-normal: #B9B9BE;
-    --interactive-hover: #dcddde;
-    --interactive-active: var(--white-500);
-    --interactive-muted: hsl(217, calc(1 * 8%), 34%);
+
     --modal-background: var(--background-primary);
     --primary-600: var(--background-primary);
     --primary-630: var(--background-secondary);
@@ -112,7 +127,6 @@ body {
     --background-modifier-accent: #ffffff0f;
     --background-mentioned: hsla(38, calc(1 * 96%), 54%, 0.051);
     --background-mentioned-hover: hsla(38, calc(1 * 96%), 54%, 0.078);
-    --background-message-hover: #04040512;
     --background-help-warning: hsla(38, calc(1 * 96%), 54%, 0.102);
     --background-help-info: #00b0f41a;
     
@@ -254,8 +268,3 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 .visual-refresh .largeReactionBtn__23977.forceShow__23977 {
    padding: 0.3235rem .44rem;
 }
-
-/*embeds line border*/
-.container_b7e1cb > article {
-    border-left-color: var(--border-normal) !important
-    }
