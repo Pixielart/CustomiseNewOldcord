@@ -81,16 +81,23 @@ body {
     /* replied to text*/
     --header-secondary: #B9B9BE;
     /*main text font*/
+    --text-primary: color-mix(in oklab,var(--neutral-1) 100%,
+    var(--theme-text-color, #000) var(--theme-text-color-amount,0%));
+    --text-secondary: color-mix(in oklab,var(--neutral-16) 100%,
+    var(--theme-text-color,#000) var(--theme-text-color-amount,0%));
      --text-normal: color-mix(in oklab, var(--primary-230) 100%, 
      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
     /*nonselected channels colour*/
     --channels-default: #8e9297;
+    /*muted channels*/
+    --interactive-muted: hsl(217, calc(1 * 8%), 34%);
+    /*message placeholder text*/
+    --channel-text-area-placeholder: color-mix(in oklab,var(--primary-430) 100%,
+    var(--theme-text-color,#000) var(--theme-text-color-amount,0%));
     /*icons colour*/
     --interactive-normal: #B9B9BE;
     --interactive-hover: #dcddde;
     --interactive-active: var(--white-500);
-    /*muted channels*/
-    --interactive-muted: hsl(217, calc(1 * 8%), 34%);
 }
 
 body {
