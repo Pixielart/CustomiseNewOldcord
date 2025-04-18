@@ -1,8 +1,9 @@
+@import url("https://milbits.github.io/oldcord/src/components/redesign.css");
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 @import url("https://milbits.github.io/oldcord/src/components/color.css");
 @import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 @import url("https://milbits.github.io/oldcord/src/components/other.css");
-@import url("https://milbits.github.io/oldcord/src/components/redesign.css");
+
 
 /*main font*/
 body{
@@ -42,7 +43,7 @@ body {
     --background-mod-subtle: #36383D;
 
     /*chat bg*/
-    --background-base-lower: #323337;
+    --background-base-lower: #323337 !important;
     /*chat header and blank sidebar icons*/
     --background-primary: var(--background-base-lower);
     /*embeded links background*/
@@ -274,4 +275,47 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 
 .visual-refresh .largeReactionBtn__23977.forceShow__23977 {
    padding: 0.3235rem .44rem;
+}
+
+
+/*a fix for UserMessagePronouns vencord*/
+:is(.timestampInline_c19a55) time[aria-label^="Today at"]::before {font-size: .75rem;
+    line-height: 1.375rem;}
+:is(.timestampInline_c19a55) time[aria-label^="Today at"] {font-size: 0px;}
+
+.visual-refresh
+.themedBackground__74017 {
+    background: var(--bg-overlay-3, var(--channeltextarea-background));
+}
+
+.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+    width: 80px;}
+
+    .visual-refresh
+.listItem__650eb {
+    width: 72px;
+}
+
+.visual-refresh
+.item_b3f026 {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button__201d5:not(.cta_a3a802, .colorRed__201d5) {
+    border: unset;
+}
+
+.base_c48ade .sidebar_c48ade > .guilds_c48ade
+.wrapper__48112
+.expandedFolderBackground__48112 {
+    left: 10px;
+    width: 54px;
+    bottom: 4px;
+    border-radius: 16px 16px 25px 25px;
+    background: var(--background-modifier-accent);
+    border: none;
 }
