@@ -4,7 +4,6 @@
 @import url("https://milbits.github.io/oldcord/src/components/imgs.css");
 @import url("https://milbits.github.io/oldcord/src/components/other.css");
 
-
 /*main font*/
 body{
 	--font-primary: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -314,4 +313,15 @@ background-color: var(--selected-reaction-emoji-background) !important;}
     border-radius: 16px 16px 25px 25px;
     background: var(--background-modifier-accent);
     border: none;
+}
+
+.visual-refresh
+.searchBar__97492 {
+    background: var(--bg-overlay-3, var(--background-tertiary));
+    padding: 0 2px;
+    height: 24px;
+    width: 144px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 110px;
 }
