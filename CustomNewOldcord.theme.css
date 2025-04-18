@@ -291,10 +291,6 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
     width: 80px;}
 
-    .visual-refresh
-.listItem__650eb {
-    width: 72px;
-}
 
 .visual-refresh
 .item_b3f026 {
@@ -312,7 +308,7 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 .base_c48ade .sidebar_c48ade > .guilds_c48ade
 .wrapper__48112
 .expandedFolderBackground__48112 {
-    left: 10px;
+    left: 13px;
     width: 54px;
     bottom: 4px;
     border-radius: 16px 16px 25px 25px;
