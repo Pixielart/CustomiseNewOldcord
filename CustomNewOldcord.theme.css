@@ -329,7 +329,7 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 }
 .channelAppLauncher_e6e74f {
     position: fixed;
-    right: 10px;
+    right: 15px;
     border-radius: 8px;
     max-height: var(--custom-channel-textarea-text-area-max-height);
     background: var(--bg-overlay-3, var(--channeltextarea-background));
@@ -340,13 +340,13 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 div.app_a3002d > div > div.layers__960e4.layers__160d8 > 
 div > div > div > div.content_c48ade > div.page_c48ade > 
 div > div > div.content_f75fb0:has(.container_c8ffbb) > main
-> form > div > div > div.scrollableContainer__74017.themedBackground__74017 > div >
- div.buttons__74017 > div.channelAppLauncher_e6e74f
-{        right: 760px;}
+> form > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
+{    right: 256px;}
+
 
 .channelTextArea__74017 {
     border-radius: 8px;
     position: relative;
     text-indent: 0;
-    width: 93.5%;
+    width: calc(100% - 50px);
 }
