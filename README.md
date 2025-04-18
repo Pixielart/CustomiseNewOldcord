@@ -9,4 +9,5 @@ you can also add this by putting
 ```
 in your quick css
 
-![image](https://github.com/user-attachments/assets/567cb13e-27aa-4f68-ac08-25a743ba46f0)
+![image](https://github.com/user-attachments/assets/7885b31e-d949-4e72-b8f5-9940da8ef6ed)
+
