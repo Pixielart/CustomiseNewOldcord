@@ -1,3 +1,10 @@
+/**
+  * @name CustomizeNewOldCord
+  * @version 1.0
+  * @author @milbit,@pixielart
+  * @source https://github.com/Pixielart/CustomiseNewOldcord
+  * @description A colour customisable version of OldCord with some fixes
+*/
 @import url("https://milbits.github.io/oldcord/src/components/redesign.css");
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 @import url("https://milbits.github.io/oldcord/src/components/color.css");
