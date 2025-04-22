@@ -110,6 +110,9 @@ body {
     --interactive-normal: #B9B9BE;
     --interactive-hover: #dcddde;
     --interactive-active: var(--white-500);
+/*Profile staus border*/
+    --border-strong: #454C4C;
+}
 }
 
 body {
@@ -118,8 +121,6 @@ body {
 }
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
-     /*idk*/
-    --border-strong: rgb(60, 255, 0);
     /*extra - ignore unless doing a deeper edit*/
     --modal-footer-background: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
     --checkbox-background-checked: var(--blurple);
