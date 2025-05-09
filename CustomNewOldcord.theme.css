@@ -243,6 +243,7 @@ body {
 /*reaction background*/
     .visual-refresh .reaction__23977 {
     background-color: var(--background-secondary) !important;
+	border-radius: .5rem;
 }
 
 /*your reactions background*/
@@ -250,6 +251,7 @@ body {
     box-sizing: border-box;
     background-color: var(--selected-reaction-emoji-background) !important;
     box-shadow:0px 0px 0px 1.5px var(--emoji-reaction-border) inset;
+	  border-radius: .5rem;
 }
 
 /*your reactions number colour*/
