@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.0
+ * @version 1.1
  */
 
 
@@ -318,16 +318,13 @@ background-color: var(--selected-reaction-emoji-background) !important;}
     border: unset;
 }
 
-.visual-refresh .listItem__650eb {
+.itemsContainer_ef3116 {
     margin-left: 5px;
 }
 
 
 /*folder bg*/
-.base_c48ade .sidebar_c48ade > .guilds_c48ade
-.wrapper__48112
-.expandedFolderBackground__48112 {
-    left: 16px;
+ .isExpanded__48112 .folderGroupBackground__48112 {
     width: 48px;
     bottom: 4px;
     border-radius: 16px 16px 25px 25px;
