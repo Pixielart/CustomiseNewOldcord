@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.1
+ * @version 1.2
  */
 
 
@@ -214,27 +214,16 @@ body {
     --shadow-top-low-filter: drop-shadow(0 -1px 4px hsl(none 0% 0%/0.14));
 }
 
-
-/* sidebar fix*/
-.base_c48ade .sidebar_c48ade {margin-right: -0.007px}
-.visual-refresh
-.base_c48ade .sidebar_c48ade > .sidebarList_c48ade {
-    width: 240.3px;
-}
-
-.reaction_f8896c, .reaction__23977 {
-    border-radius: 8px; }
-
     /*left sidebar borders*/
 .visual-refresh .theme-dark, .visual-refresh.theme-dark {
 --app-border-frame: var(--background-secondary)
 }
 
 /* slightly bigger reaction emojis*/
-.reaction__23977 .reactionInner__23977, .reaction_f8896c.reactionInner_f8896c {
+.reactionInner__23977, .reaction_f8896c.reactionInner_f8896c {
    align-items: center;
     display: flex;
-      padding: 0.18rem 0.4rem;
+    padding: 0.18rem 0.375rem !important;
     position: relative;
 } 
 
@@ -244,6 +233,12 @@ body {
     margin-left: .375rem;
     text-align: center;
 }
+
+/*emoji gap*/
+.reactions__23977 {
+    padding-top: .125rem;
+    margin-bottom: -.5rem;
+    }
 
 /*reaction background*/
     .visual-refresh .reaction__23977 {
@@ -256,8 +251,6 @@ body {
     background-color: var(--selected-reaction-emoji-background) !important;
     box-shadow:0px 0px 0px 1.5px var(--emoji-reaction-border) inset;
 }
-
-
 
 /*your reactions number colour*/
 .reaction_f8896c.reactionMe_f8896c .reactionCount_f8896c,
@@ -274,7 +267,7 @@ color: var(--text-secondary) !important}
     background-color: var(--background-secondary);
     border: .0625rem solid transparent;
     border-radius: .5rem;
-    margin-left: 2px;
+    margin-left: 0px;
     margin-top: -0.7px;
     opacity: 1;
 }
@@ -397,20 +390,9 @@ div > div > div.content_f75fb0:has(.container_c8ffbb) > main
 .base_c48ade .sidebar_c48ade > .guilds_c48ade
 .guildSeparator__252b6 {height: 1px}
 
-#guild-list-unread-dms > div {height: 50px !important}
-
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d 
-> div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade > nav > ul > div > div > div:nth-child(3) {
-    margin-left: 3px}
-
 .stack_dbd263[id="guild-list-unread-dms"] > div > .listItem__650eb {
     gap: 16px !important;
     padding-bottom: 10px !important;
-}
-
-.stack_dbd263[id="guild-list-unread-dms"] {
-    gap: 16px !important;
-    padding-bottom: 0px !important;
 }
 
 /*background compatible text box*/
