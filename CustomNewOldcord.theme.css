@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.2
+ * @version 1.3
  */
 
 
@@ -45,7 +45,9 @@ body {
     --blurple: #6F73DC;
     }
 
-
+/*sidebar add server / discover*/
+    .circleIconButton__5bc7e {background-color:#323337}
+    
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*settings bg*/
     --background-base-low: var(--background-base-lower);
@@ -110,9 +112,8 @@ body {
     --interactive-normal: #B9B9BE;
     --interactive-hover: #dcddde;
     --interactive-active: var(--white-500);
-/*Profile staus border*/
+    /*Profile staus border*/
     --border-strong: #454C4C;
-}
 }
 
 body {
@@ -122,7 +123,15 @@ body {
 
 /*name tags colour*/
 .visual-refresh .theme-dark, .visual-refresh.theme-dark {
-    --bg-mod-strong: color-mix(in oklab,hsl(var(--opacity-20-hsl)/0.2) 100%,hsl(var(--theme-base-color-hsl,0 0% 0%)/0.2) var(--theme-base-color-amount,0%));}
+    --bg-mod-strong: color-mix(in oklab,hsl(var(--opacity-20-hsl)/0.2) 100%,hsl(var(--theme-base-color-hsl,0 0% 0%)/0.2) var(--theme-base-color-amount,0%));
+}
+/*Profile sidebar*/
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-midnight)
+{--background-surface-high: #232427;
+    --user-profile-overlay-background: #111214;}
+
+
+
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*extra - ignore unless doing a deeper edit*/
@@ -247,7 +256,7 @@ body {
 /*reaction background*/
     .visual-refresh .reaction__23977 {
     background-color: var(--background-secondary) !important;
-	border-radius: .5rem;
+      border-radius: .5rem;
 }
 
 /*your reactions background*/
@@ -255,7 +264,7 @@ body {
     box-sizing: border-box;
     background-color: var(--selected-reaction-emoji-background) !important;
     box-shadow:0px 0px 0px 1.5px var(--emoji-reaction-border) inset;
-	  border-radius: .5rem;
+      border-radius: .5rem;
 }
 
 /*your reactions number colour*/
@@ -300,27 +309,17 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 }
 
 /*sever width*/
-.base_c48ade .sidebar_c48ade > .guilds_c48ade {
-    width: 80px;}
-
-
-.visual-refresh
-.item_b3f026 {
-    position: relative;
-    font-size: 16px;
-    line-height: 20px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.button__201d5:not(.cta_a3a802, .colorRed__201d5) {
-    border: unset;
-}
-
 .itemsContainer_ef3116 {
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
+/*new server icons gap*/
+.tutorialContainer__650eb {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.stack_dbd263[data-justify=start] {gap: 6px !important}
 
 /*folder bg*/
  .isExpanded__48112 .folderGroupBackground__48112 {
@@ -330,6 +329,10 @@ background-color: var(--selected-reaction-emoji-background) !important;}
     background: var(--background-modifier-accent);
     border: none;
 }
+
+.folderPreviewWrapper__48112 {
+    
+    }
 
 /*searchfix*/
 .visual-refresh
@@ -354,13 +357,11 @@ background-color: var(--selected-reaction-emoji-background) !important;}
         padding: 6px !important;
 }
 
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > 
-div.app_a3002d > div > div.layers__960e4.layers__160d8 > 
-div > div > div > div.content_c48ade > div.page_c48ade > 
-div > div > div.content_f75fb0:has(.container_c8ffbb) > main
-> form > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
-{    right: 256px;}
+div:has(.outer_c0bea0.theme-dark.images-dark.user-profile-sidebar) > main > form > div > div > div > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
+{    right: 356px;}
 
+div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
+{    right: 256px;}
 
 .channelTextArea__74017 {
     border-radius: 8px;
@@ -393,12 +394,14 @@ div > div > div.content_f75fb0:has(.container_c8ffbb) > main
         font-size: .8rem;}
 
 /*notification separator fix*/
-.base_c48ade .sidebar_c48ade > .guilds_c48ade
-.guildSeparator__252b6 {height: 1px}
-
 .stack_dbd263[id="guild-list-unread-dms"] > div > .listItem__650eb {
     gap: 16px !important;
     padding-bottom: 10px !important;
+}
+
+.base_c48ade .sidebar_c48ade > .guilds_c48ade
+.listItem__650eb:has(.guildSeparator__252b6) {
+    margin: 8px 0 8px -1px;
 }
 
 /*background compatible text box*/
@@ -412,15 +415,13 @@ div > div > div.content_f75fb0:has(.container_c8ffbb) > main
     background: rgba(220, 220, 255, 0.04) !important;
 }
 
-/*fix notification numbers*/
-.folderButton__48112 {overflow: visible}
-
-
 /*Discord logo fix*/
 .tutorialContainer__1f388 {bottom: -4px}
 
 .stack_dbd263[id="guild-list-unread-dms"]:has(.listItem__650eb) {padding-top: 4px !important;}
 
+/*fix notification numbers*/
+.folderButton__48112 {overflow: visible}
 
 /*name tags*/
 .clanTagChiplet_c19a55, .chipletContainerInline__4a25c, .chipletContainerInline__10651, .chipletContainerInner__10651, .clanTag__5d473 
