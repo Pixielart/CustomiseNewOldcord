@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.4
+ * @version 1.5
  */
 
 
@@ -378,7 +378,7 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
 }
 
 .messagesWrapper__36d07 {
-    margin-bottom: -4px;
+    margin-bottom: 0px;
 }
 
 /*OP*/
