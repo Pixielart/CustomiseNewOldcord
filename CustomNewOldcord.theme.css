@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.5
+ * @version 1.6
  */
 
 
@@ -318,8 +318,8 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 
 /*new server icons gap*/
 .tutorialContainer__650eb {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .stack_dbd263[data-justify=start] {gap: 6px !important}
