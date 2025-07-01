@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.6
+ * @version 1.7
  */
 
 
@@ -26,8 +26,8 @@ body{
 /*linked messages*/
 .wrapper_f61d60 {
     font-weight: 500;
-    color: #C9CDFB;
-    background: #3D4270;}
+    color: #C9CDFB !important;
+    background: #3D4270 !important;}
 
     .icon_b75563 {
     margin-right: 0px;}
@@ -41,59 +41,60 @@ body{
 
 body {
     /*accent colour*/
-    --bg-brand: #6F73DC;
-    --blurple: #6F73DC;
+    --bg-brand: #6F73DC !important;
+    --blurple: #6F73DC !important;
     }
 
 /*sidebar add server / discover*/
-    .circleIconButton__5bc7e {background-color:#323337}
+    .circleIconButton__5bc7e {background-color:#323337 !important}
     
+    .theme-darker,.theme-light, .theme-midnight,
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*settings bg*/
     --background-base-low: var(--background-base-lower);
 
     /*Hover friends*/
-    --background-mod-subtle: #36383D;
+    --background-mod-subtle: #36383D !important;
 
     /*chat bg*/
     --background-base-lower: #323337 !important;
     /*chat header and blank sidebar icons*/
     --background-primary: var(--background-base-lower);
     /*embeded links background*/
-    --background-secondary: #2C2D30;
+    --background-secondary: #2C2D30 !important;
     /*user info*/
-    --background-secondary-alt: #232427;
+    --background-secondary-alt: #232427 !important;
     /*right sidebar background*/
-    --custom-channel-members-bg: #232427;
+    --custom-channel-members-bg: #232427 !important;
     /*servers bar*/
-    --background-tertiary: #1E1F21;
+    --background-tertiary: #1E1F21 !important;
     /*top bar*/
-    --bg-base-tertiary: #1E1F21;
+    --bg-base-tertiary: #1E1F21 !important;
     /*Chatbox*/
-    --channeltextarea-background: #393A3F;
+    --channeltextarea-background: #393A3F !important;
     /*channels background*/
-    --background-base-lowest: #2C2D30;
+    --background-base-lowest: #2C2D30 !important;
     /*scrollbar*/
-    --scrollbar-thin-thumb: #1A1B1E;
-    --scrollbar-auto-thumb: #1A1B1E;
-    --scrollbar-auto-track: #2C2D30;
+    --scrollbar-thin-thumb: #1A1B1E !important;
+    --scrollbar-auto-thumb: #1A1B1E !important;
+    --scrollbar-auto-track: #2C2D30 !important;
     /*borders in right sidebar*/
-    --border-faint: #3e4044;
+    --border-faint: #3e4044 !important;
     /*embeds border*/
-    --border-normal: #212224;
+    --border-normal: #212224 !important;
     /*border in channels sidebar*/
-    --border-subtle: #313438;
+    --border-subtle: #313438 !important;
     /*viewing older messages*/
     --background-accent: color-mix(in oklab,var(--primary-530) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%));
     /*reaction emojis*/
-    --selected-reaction-emoji-background: #393D5D;
-    --emoji-reaction-border: #4752C4;
+    --selected-reaction-emoji-background: #393D5D !important;
+    --emoji-reaction-border: #4752C4 !important;
     /*Message hover*/
-    --background-message-hover: #04040512;
+    --background-message-hover: #04040512 !important;
     /*fonts*/
     --header-primary: var(--white-500);
     /* replied to text*/
-    --header-secondary: #B9B9BE;
+    --header-secondary: #B9B9BE !important;
     /*main text font*/
     --text-primary: color-mix(in oklab,var(--neutral-1) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount,0%));
@@ -102,37 +103,37 @@ body {
      --text-normal: color-mix(in oklab, var(--primary-230) 100%, 
      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
     /*nonselected channels colour*/
-    --channels-default: #8e9297;
+    --channels-default: #8e9297 !important;
     /*muted channels*/
     --interactive-muted: hsl(217, calc(1 * 8%), 34%);
     /*message placeholder text*/
     --channel-text-area-placeholder: color-mix(in oklab,var(--primary-430) 100%,
     var(--theme-text-color,#000) var(--theme-text-color-amount,0%));
     /*icons colour*/
-    --interactive-normal: #B9B9BE;
-    --interactive-hover: #dcddde;
+    --interactive-normal: #B9B9BE !important;
+    --interactive-hover: #dcddde !important;
     --interactive-active: var(--white-500);
     /*Profile staus border*/
-    --border-strong: #454C4C;
+    --border-strong: #454C4C !important;
 }
 
 body {
     /*channel icons*/
-        --text-muted: #72767d;
+        --text-muted: #72767d !important;
 }
 
 /*name tags colour*/
-.visual-refresh .theme-dark, .visual-refresh.theme-dark {
+.visual-refresh .theme-dark, .visual-refresh.theme-dark, .visual-refresh.theme-darker,.visual-refresh.theme-light, .visual-refresh.theme-midnight, {
     --bg-mod-strong: color-mix(in oklab,hsl(var(--opacity-20-hsl)/0.2) 100%,hsl(var(--theme-base-color-hsl,0 0% 0%)/0.2) var(--theme-base-color-amount,0%));
 }
 /*Profile sidebar*/
-.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-midnight)
-{--background-surface-high: #232427;
-    --user-profile-overlay-background: #111214;}
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-light, .theme-midnight,)
+{--background-surface-high: #232427 !important;
+    --user-profile-overlay-background: #111214 !important;}
 
 
 
-
+.theme-darker,.theme-light, .theme-midnight,
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*extra - ignore unless doing a deeper edit*/
     --modal-footer-background: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
@@ -385,12 +386,12 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
 
 [aria-label="Original Poster"] {
     border-radius: 8px !important;
-    background: #C9CDFB;
-    color: #4752C4;
+    background: #C9CDFB !important;
+    color: #4752C4 !important;
     border: none;
     height: 16.8px !important;
     padding: 0 5px !important;
-    border-color: #C9CDFB}
+    border-color: #C9CDFB !important}
 
     [aria-label="Original Poster"]  > .botText__82f07 {
       font-weight: 700;
