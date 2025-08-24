@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.7
+ * @version 1.8
  */
 
 
@@ -39,6 +39,8 @@ body{
     --bg-mod-subtle: #41447B !important;
 }
 
+
+
 body {
     /*accent colour*/
     --bg-brand: #6F73DC !important;
@@ -48,7 +50,7 @@ body {
 /*sidebar add server / discover*/
     .circleIconButton__5bc7e {background-color:#323337 !important}
     
-    .theme-darker,.theme-light, .theme-midnight,
+    .theme-darker, .theme-light:not(html.custom-theme-background, :has(#clientThemeVars)), .theme-midnight,
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*settings bg*/
     --background-base-low: var(--background-base-lower);
@@ -91,10 +93,8 @@ body {
     --emoji-reaction-border: #4752C4 !important;
     /*Message hover*/
     --background-message-hover: #04040512 !important;
-    /*fonts*/
-    --header-primary: var(--white-500);
     /* replied to text*/
-    --header-secondary: #B9B9BE !important;
+    --header-secondary: #B9B9BE;
     /*main text font*/
     --text-primary: color-mix(in oklab,var(--neutral-1) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount,0%));
@@ -103,19 +103,23 @@ body {
      --text-normal: color-mix(in oklab, var(--primary-230) 100%, 
      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
     /*nonselected channels colour*/
-    --channels-default: #8e9297 !important;
+    --channels-default: #8e9297;
     /*muted channels*/
     --interactive-muted: hsl(217, calc(1 * 8%), 34%);
     /*message placeholder text*/
     --channel-text-area-placeholder: color-mix(in oklab,var(--primary-430) 100%,
     var(--theme-text-color,#000) var(--theme-text-color-amount,0%));
-    /*icons colour*/
-    --interactive-normal: #B9B9BE !important;
-    --interactive-hover: #dcddde !important;
     --interactive-active: var(--white-500);
     /*Profile staus border*/
-    --border-strong: #454C4C !important;
+    --border-strong: #454C4C;
 }
+
+
+/*gif/gift/play icons*/
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity],
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+     fill: #B9B9BE !important; 
+     stroke: #B9B9BE !important; }
 
 body {
     /*channel icons*/
@@ -130,7 +134,6 @@ body {
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-light, .theme-midnight,)
 {--background-surface-high: #232427 !important;
     --user-profile-overlay-background: #111214 !important;}
-
 
 
 .theme-darker,.theme-light, .theme-midnight,
@@ -226,7 +229,7 @@ body {
     --shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 hsl(none 0% 0%/0.24));
     --shadow-top-low: 0 -1px 4px 0 hsl(none 0% 0%/0.14);
     --shadow-top-low-filter: drop-shadow(0 -1px 4px hsl(none 0% 0%/0.14));
-}
+} 
 
     /*left sidebar borders*/
 .visual-refresh .theme-dark, .visual-refresh.theme-dark {
@@ -427,3 +430,36 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
 /*name tags*/
 .clanTagChiplet_c19a55, .chipletContainerInline__4a25c, .chipletContainerInline__10651, .chipletContainerInner__10651, .clanTag__5d473 
 {display: inline-block !important}
+
+/*Creeate DM*/
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2 > button > div > div > svg,
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2 > button > div > div > span {display: none}
+
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2 > button > div > div
+{    background-image: url('https://gist.githubusercontent.com/Pixielart/71141d5bac91379201170aa3a55910be/raw/baf0b9b4f3f92736902a7b96be29f6ca5467ba91/discordplus.svg');
+     width: 16px;
+    height: 16px;
+    background-size: cover;
+    display: block;}
+
+    :is(.primary__6af3a, .primary__6af3a:disabled) {
+    background-color: transparent;
+}
+
+   #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2
+    {
+        display: flex;
+        height: 16px !important;
+        padding: 18px 8px 6px 18px !important;
+    }
+
+    #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2 > button 
+    {padding: 0 2px}
+
+    #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2 > button:hover {
+        background-color: transparent !important;
+}
+
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2:hover > .headerText__99e7c {
+    color: var(--interactive-hover) !important;
+}
