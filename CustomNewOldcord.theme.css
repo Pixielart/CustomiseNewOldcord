@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.9
+ * @version 2.0
  */
 
 
@@ -370,7 +370,7 @@ div:has(.outer_c0bea0.theme-dark.images-dark.user-profile-sidebar) > main > form
 div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
 {    right: 256px;}
 
-.channelTextArea__74017 {
+.channelTextArea__74017:has(.channelAppLauncher_e6e74f) {
     border-radius: 8px;
     position: relative;
     text-indent: 0;
