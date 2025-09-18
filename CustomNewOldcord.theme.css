@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 1.8
+ * @version 1.9
  */
 
 
@@ -442,7 +442,7 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
     background-size: cover;
     display: block;}
 
-    :is(.primary__6af3a, .primary__6af3a:disabled) {
+  :is(.lookFilled__201d5.colorBrand__201d5, .primary_a22cb0, .primary_a22cb0:disabled),  :is(.primary__6af3a, .primary__6af3a:disabled) {
     background-color: transparent;
 }
 
@@ -462,4 +462,56 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
 
 #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.sidebar_c48ade.theme-dark.images-dark > div.sidebarList_c48ade.sidebarListRounded_c48ade > nav > div.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c > ul > h2:hover > .headerText__99e7c {
     color: var(--interactive-hover) !important;
+}
+
+
+.messagesWrapper__36d07 {
+    margin-bottom: 12px;
+}
+
+    .jumpToPresentBar__0f481 {
+        bottom: 0px !important;
+    }
+
+/*10/09/2025 changes text box*/
+.channelTextArea_f75fb0 {
+    margin-bottom: 24px;
+}
+
+     .container__37e49 {
+        padding: 12px 8px 12px 12px !important;
+    }
+
+.title_b6c092 {
+    text-overflow: ellipsis !important;
+}
+
+
+.avatarDecoration__44b0c
+{width: 46.4px !important;
+height: 38.4px !important }
+
+        .attachWrapper__0923f {
+            padding: 6px 0px 6px 10px !important;}
+
+
+    .base_b88801 {
+        left: 2px !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 24px !important;
+        resize: none !important;
+        align-items: center !important;
+        color: var(--text-default);
+        top: unset !important;
+        padding-left: none !important;
+        bottom: 0px !important;
+    }
+
+.align-chat-input .inTextChannel_b88801 .text_b88801 {
+    margin-left: 4px !important}
+
+    /*account settings fix*/
+    .contentColumnDefault__23e6b {
+    padding: 60px 10px 80px 40px !important;
 }
