@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.0
+ * @version 2.1
  */
 
 
@@ -486,8 +486,7 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
     text-overflow: ellipsis !important;
 }
 
-
-.avatarDecoration__44b0c
+ div.wrapper__44b0c.avatar__37e49 > svg.avatarDecoration__44b0c
 {width: 46.4px !important;
 height: 38.4px !important }
 
