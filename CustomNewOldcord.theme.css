@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.1
+ * @version 2.2
  */
 
 
@@ -169,8 +169,8 @@ body {
     
     --scrollbar-thin-track: transparent;
 
-    --scrollbar-auto-scrollbar-color-thumb: #b306f2;
-    --scrollbar-auto-scrollbar-color-track: #0dbf1e;
+    --scrollbar-auto-scrollbar-color-thumb: #1A1B1E;
+    --scrollbar-auto-scrollbar-color-track: #2C2D30;
     --elevation-stroke: 0 0 0 1px #04040526;
     --elevation-low: 0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d;
     --elevation-medium: 0 4px 4px #00000029;
@@ -518,3 +518,6 @@ height: 38.4px !important }
     .barBase__0f481 {
         bottom: 0px !important;
     }
+
+[aria-label="Output Options"],
+    [aria-label="Input Options"] {display: none !important}
