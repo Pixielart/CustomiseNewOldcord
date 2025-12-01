@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.2
+ * @version 2.3
  */
 
 
@@ -354,10 +354,11 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 }
 
 
-/*gamebutton*/
+/* app gamebutton*/
+.buttonContainer_e6e74f.app-launcher-entrypoint,
 .channelAppLauncher_e6e74f {
     position: fixed;
-    right: 15px;
+    right: 11px;
     border-radius: 8px;
     max-height: var(--custom-channel-textarea-text-area-max-height);
     background: var(--bg-overlay-3, var(--channeltextarea-background));
@@ -367,9 +368,13 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 div:has(.outer_c0bea0.theme-dark.images-dark.user-profile-sidebar) > main > form > div > div > div > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
 {    right: 356px;}
 
-div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.channelAppLauncher_e6e74f
-{    right: 256px;}
+ div.content_f75fb0:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.buttonContainer_e6e74f.app-launcher-entrypoint {
+    right: 252px}
 
+     div.content_f75fb0:has(#user-profile-sidebar-heading-165338614215999488) > main > form > div > div > div > div > div.buttons__74017 > div.buttonContainer_e6e74f.app-launcher-entrypoint {
+    right: 352px !important}
+
+.scrollableContainer__74017.themedBackground__74017:has(div.buttonContainer_e6e74f.app-launcher-entrypoint),
 .channelTextArea__74017:has(.channelAppLauncher_e6e74f) {
     border-radius: 8px;
     position: relative;
@@ -387,6 +392,7 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
 
 /*OP*/
 
+.rem__82f07.botTag__82f07.botTagOP__82f07,
 [aria-label="Original Poster"] {
     border-radius: 8px !important;
     background: #C9CDFB !important;
@@ -396,6 +402,7 @@ div:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableConta
     padding: 0 5px !important;
     border-color: #C9CDFB !important}
 
+.rem__82f07.botTag__82f07.botTagOP__82f07 >  .botText__82f07,
     [aria-label="Original Poster"]  > .botText__82f07 {
       font-weight: 700;
         font-size: .8rem;}
