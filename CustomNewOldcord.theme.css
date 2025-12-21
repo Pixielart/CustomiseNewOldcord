@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.4
+ * @version 2.5
  */
 
 
@@ -24,7 +24,7 @@ body{
 }
 
 /*linked messages - hashtags @ name*/
-.b7556324b2bdb82b-name, .wrapper_f61d60 {
+.f61d60ed65f9a128-wrapper, .b7556324b2bdb82b-name, .wrapper_f61d60 {
     font-weight: 500;
     color: #C9CDFB !important;
     background: #3D4270 !important;}
