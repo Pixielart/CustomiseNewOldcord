@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.5
+ * @version 2.6
  */
 
 
@@ -115,6 +115,11 @@ body {
     --border-strong: #454C4C;
 }
 
+@supports (color:color-mix(in lch,red,blue)) {
+  .theme-dark 
+{
+--interactive-text-reaction: color-mix(in oklab,var(--neutral-16) 100%,var(--custom-theme-text-color,#000) var(--custom-theme-text-color-amount,0%));}
+}
 
 /*gif/gift/play icons*/
 .lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity],
@@ -162,6 +167,7 @@ body {
     --modal-background: var(--background-primary);
     --primary-600: var(--background-primary);
     --primary-630: var(--background-secondary);
+
 
     --background-floating: #18191c;
     --background-modifier-hover: #4f545c29;
@@ -266,7 +272,7 @@ body {
 
 ._23977d5b7cef7361-reactionCount, .f8896c4f6be18f59-reactionCount,
 .reactionCount__23977 {
-    color: var(--interactive-normal);
+    color: var(--interactive-text-reaction);
     font-weight: 500;
     margin-left: .285rem;
     text-align: center;
@@ -572,6 +578,7 @@ height: 38.4px !important }
     .barBase__0f481 {
         bottom: 0px !important;
     }
+
 
 [aria-label="Output Options"],
     [aria-label="Input Options"] {display: none !important}
