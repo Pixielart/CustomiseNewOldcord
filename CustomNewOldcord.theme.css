@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.7
+ * @version 2.8
  */
 
 
@@ -276,6 +276,8 @@ body {
     font-weight: 500;
     margin-left: .285rem;
     text-align: center;
+    min-width: 12px !important;
+    font-size: 100% !important;
 }
 
 /*emoji gap*/
@@ -307,6 +309,7 @@ body {
 .reaction__23977.reactionMe__23977 .reactionCount__23977{
 color: var(--text-secondary) !important}
 
+.reaction__23977 .emoji,
 .reactionLarge.emoji {
     width: 1.25rem;
     height: 1.25rem;
