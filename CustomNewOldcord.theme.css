@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.8
+ * @version 2.9
  */
 
 
@@ -584,3 +584,5 @@ height: 38.4px !important }
 
 [aria-label="Output Options"],
     [aria-label="Input Options"] {display: none !important}
+
+.container__8a031.size-xl__8a031:not(:has(.confirmStep_a55fdc, .inviteSplash__9b0f4, .gameProfile_d100d9)) {width: inherit !important}
