@@ -267,6 +267,9 @@ body {
 --app-border-frame: var(--background-secondary)
 }
 
+.bannerImage_f37cb1, .bannerImg_f37cb1 {
+    min-width: calc(312px - var(--custom-guild-list-width)) !important}
+
 #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark,
 .sidebar__5e434 .theme-dark images-dark .sidebar__5e434
     {min-width: 312px !important;}
