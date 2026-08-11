@@ -2,8 +2,8 @@
  * @name CustomNewOldcord
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
- * @source https://github.com/Pixielart/CustomiseNewOldcord
- * @version 2.9
+ * @source https://githuhttps://support.discord.com/$0b.com/Pixielart/CustomiseNewOldcord
+ * @version 3.0
  */
 
 
@@ -141,6 +141,12 @@ body {
     --bg-mod-strong: color-mix(in oklab,hsl(var(--opacity-20-hsl)/0.2) 100%,hsl(var(--theme-base-color-hsl,0 0% 0%)/0.2) var(--theme-base-color-amount,0%));
 }
 
+/*sidebar nametag adjust*/
+.panelTitleContainer__37e49 {
+    margin-bottom: 0px;
+    margin-top: -3px;
+}
+
 /*Profile sidebar*/
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-light, .theme-midnight,)
 {--background-surface-high: #232427 !important;
@@ -247,6 +253,11 @@ body {
     --shadow-top-low-filter: drop-shadow(0 -1px 4px hsl(none 0% 0%/0.14));
 } 
 
+/*sidebar color*/
+.theme-darker, .theme-light:not(html.custom-theme-background, :has(#clientThemeVars)), .theme-midnight, .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
+--primary-660: #232427;
+--primary-700: #1E1F21;}
+
     ._2ea32c412048f708-modeSelected ._2ea32c412048f708-link, ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-link {
         background: var(--background-modifier-selected) !important;
     }
@@ -255,6 +266,10 @@ body {
 .visual-refresh .theme-dark, .visual-refresh.theme-dark {
 --app-border-frame: var(--background-secondary)
 }
+
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark,
+.sidebar__5e434 .theme-dark images-dark .sidebar__5e434
+    {min-width: 312px !important;}
 
 /* slightly bigger reaction emojis*/
 ._23977d5b7cef7361-reactionInner, .f8896c4f6be18f59-reaction.f8896c4f6be18f59-reactionInner,
@@ -279,6 +294,9 @@ body {
     min-width: 12px !important;
     font-size: 100% !important;
 }
+
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div:nth-child(5) > div > .spriteContainer__04eed 
+{transform: scale(1.12) !important;}
 
 /*emoji gap*/
 ._23977d5b7cef7361-reactions,
@@ -365,6 +383,9 @@ background-color: var(--selected-reaction-emoji-background) !important;}
 .dbd2630aec71879b-stack[data-justify=start],
 .stack_dbd263[data-justify=start] {gap: 6px !important}
 
+.base__5e434 .sidebar__5e434 > .guilds__5e434 .scroller_ef3116 {
+    padding: 2px 0px 0px 1px !important}
+    
 /*server open folder bg*/
 ._48112cbe77dc5022-isExpanded ._48112cbe77dc5022-folderGroupBackground, .isExpanded__48112 .folderGroupBackground__48112 {
     width: 48px;
@@ -408,6 +429,7 @@ background-color: var(--selected-reaction-emoji-background) !important;}
         padding: 6px !important;
 }
 
+.emojiButton__74017:hover, .buttonContainer_e6e74f:hover { background: var(--bg-overlay-3, var(--channeltextarea-background)) !important;}
 
 div.f75fb00fb7356cbe-content:has(.c8ffbb79449f399c-container) > main > form > div > div > div > div._740174f3d6a2c8fe-scrollableContainer._740174f3d6a2c8fe-themedBackground > div > div._740174f3d6a2c8fe-buttons > div.e6e74fd4d1221f53-buttonContainer.app-launcher-entrypoint,
  div.content_f75fb0:has(.container_c8ffbb) > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div.buttonContainer_e6e74f.app-launcher-entrypoint {
@@ -458,6 +480,8 @@ div.f75fb00fb7356cbe-content:has(.c0bea05627c5dc35-outer.theme-dark.images-dark.
     padding-top: 10px !important;
 }
 
+.base__5e434 .sidebar__5e434 > .guilds__5e434
+    .listItem__650eb:has(.guildSeparator__252b6),
 ._650eb104245d257b-listItem:has(._252b6afd49fda06f-guildSeparator),
 .base_c48ade .sidebar_c48ade > .guilds_c48ade
 .listItem__650eb:has(.guildSeparator__252b6) {
@@ -552,9 +576,10 @@ div.f75fb00fb7356cbe-content:has(.c0bea05627c5dc35-outer.theme-dark.images-dark.
 height: 38.4px !important }
 
 /*file attachments plus button in text box*/
+.attachButtonInner__0923f,
        ._0923f156a0410684-attachWrapper,
         .attachWrapper__0923f {
-            padding: 6px 0px 6px 10px !important;}
+            padding: 5px 5px 6px 8px !important;}
 
 
     .base_b88801 {
@@ -584,5 +609,6 @@ height: 38.4px !important }
 
 [aria-label="Output Options"],
     [aria-label="Input Options"] {display: none !important}
+
 
 .container__8a031.size-xl__8a031:not(:has(.confirmStep_a55fdc, .inviteSplash__9b0f4, .gameProfile_d100d9)) {width: inherit !important}
