@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://githuhttps://support.discord.com/$0b.com/Pixielart/CustomiseNewOldcord
- * @version 3.0
+ * @version 3.1
  */
 
 
@@ -615,3 +615,7 @@ height: 38.4px !important }
 
 
 .container__8a031.size-xl__8a031:not(:has(.confirmStep_a55fdc, .inviteSplash__9b0f4, .gameProfile_d100d9)) {width: inherit !important}
+
+    /*Forum posts fontsize fix*/
+.typeThread__2ea32 .name__2ea32>div
+       { font-size: 16px;}
