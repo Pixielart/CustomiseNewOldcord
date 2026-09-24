@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://githuhttps://support.discord.com/$0b.com/Pixielart/CustomiseNewOldcord
- * @version 3.1
+ * @version 3.2
  */
 
 
@@ -24,10 +24,14 @@ body{
 }
 
 /*linked messages - hashtags @ name*/
-.f61d60ed65f9a128-wrapper, .b7556324b2bdb82b-name, .wrapper_f61d60 {
+ .f61d60ed65f9a128-wrapper, .b7556324b2bdb82b-name, .wrapper_f61d60 {
     font-weight: 500;
     color: #C9CDFB !important;
     background: #3D4270 !important;}
+
+
+  .wrapper_f61d60 >  .usernameGradient_e5de78 {
+    -webkit-text-fill-color: #C9CDFB !important;}
 
     .icon_b75563 {
     margin-right: 0px;}
@@ -46,6 +50,7 @@ body {
     --bg-brand: #6F73DC !important;
     --blurple: #6F73DC !important;
     }
+
 
 /*sidebar add server / discover*/
  ._5bc7ed9d4097f6b5-circleIconButton,
@@ -269,6 +274,12 @@ body {
 
 .bannerImage_f37cb1, .bannerImg_f37cb1 {
     min-width: calc(312px - var(--custom-guild-list-width)) !important}
+
+  html.visual-refresh {
+    .base__5e434 {
+        grid-template-columns: [start] min-content [guildsEnd] min-content [channelsEnd] 1fr [end]; !important;
+    }
+}
 
 #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark,
 .sidebar__5e434 .theme-dark images-dark .sidebar__5e434
