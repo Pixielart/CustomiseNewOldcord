@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://githuhttps://support.discord.com/$0b.com/Pixielart/CustomiseNewOldcord
- * @version 3.2
+ * @version 3.3
  */
 
 
@@ -281,8 +281,8 @@ body {
     }
 }
 
-#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark,
-.sidebar__5e434 .theme-dark images-dark .sidebar__5e434
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434,
+.sidebar__5e434 .sidebar__5e434
     {min-width: 312px !important;}
 
 /* slightly bigger reaction emojis*/
