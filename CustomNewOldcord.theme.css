@@ -3,7 +3,7 @@
  * @author @milbit, @PixielArt
  * @Description A colour customisable version of OldCord 2024
  * @source https://githuhttps://support.discord.com/$0b.com/Pixielart/CustomiseNewOldcord
- * @version 3.4
+ * @version 3.5
  */
 
 
@@ -464,7 +464,6 @@ opacity: 1
     height: 24px;
     border-radius: 4px;
     border: none;
-    margin-right: 75px;
 }
 
 
